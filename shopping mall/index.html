@@ -2,10 +2,223 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    
+    <header class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- 头部 -->
+            <div class="navbar-header">
+                <!-- logo -->
+                <div class="navbar-brand"  style="margin-top: -10px; height: 80px;">
+                    <img src="./images/logo.jpg" alt="">
+                </div>
+                <!-- 触发按钮 -->
+                <!-- data-target="#asl" 绑定触发事件按钮与折叠菜单  data-toggle绑定JS控制效果 -->
+                <button type="button" class="navbar-toggle" data-target="#asl" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- 折叠菜单 -->
+            <div class="navbar-collapse collapse" id="asl">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="" style="font-size: 16px; color: #fff;">首页</a></li>
+                    <li><a href="" style="font-size: 16px; color: #fff;">穿搭</a></li>
+                    <li><a href="" style="font-size: 16px; color: #fff;">热门</a></li>
+                    <li><a href="" style="font-size: 16px; color: #fff;">品牌</a></li>
+                    <li><a href="" style="font-size: 16px; color: #fff;">登录 | 注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav class="banner">
+        <div class="container">
+            <!-- data-ride="carousel"自动轮播  slide横向滑动轮播  data-interval="3000"间隔秒数 -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <!-- 图片盒子 -->
+                <div class="carousel-inner">
+                    <div class="item active"><img src="./images/banner-1.jpg" alt=""></div>
+                    <div class="item"><img src="./images/banner-2.jpg" alt=""></div>
+                    <div class="item"><img src="./images/banner-3.jpg" alt=""></div>
+                    <div class="item"><img src="./images/banner-4.jpg" alt=""></div>
+                </div>
+                <!-- 左右箭头  data-slide="prev"添加箭头切换效果 -->
+                <a href="#myCarousel" class="carousel-control left" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#myCarousel" class="carousel-control right" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                <!-- 小圆点指示器 -->
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="content">
+        <div class="trend-style">
+            <div class="container">
+                <h2 class="wenzi1">潮流穿搭风格</h2>
+                <p class="wenzi2">多种风格任你选择</p>
+                <div class="row">
+                    <!-- 信息区域 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="images/chao-1.png" alt="" class="w-100">
+                            <div class="card-body">
+                                <p class="card-text">通常会选择衬衫搭配深色萝卜裤，很青春的样子，并且上身很舒服，有些许慵懒帅气的样子。</p>
+                                <div class="card-btn">
+                                    <button type="button" class="btn btn-sm">更多>></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="images/chao-2.png" alt="" class="w-100">
+                            <div class="card-body">
+                                <p class="card-text">帅气风格，酷酷的感觉，通常女生穿衣比较宽大，发型高马尾或者短发，配上夸张口红色。</p>
+                                <div class="card-btn">
+                                    <button type="button" class="btn btn-sm">更多>></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="images/chao-3.png" alt="" class="w-100">
+                            <div class="card-body">
+                                <p class="card-text">甜美风格，衣服的几个主要元素，蝴蝶结，心形图案，浅粉色、浅紫色等少女感十足的颜色。</p>
+                                <div class="card-btn">
+                                    <button type="button" class="btn btn-sm">更多>></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="images/chao-4.png" alt="" class="w-100">
+                            <div class="card-body">
+                                <p class="card-text">帅气风格，这种穿搭看起来酷酷的感觉，通常男生穿的衣服衬衫搭配单肩背包，戴一个帽子。</p>
+                                <div class="card-btn">
+                                    <button type="button" class="btn btn-sm">更多>></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="images/chao-3.png" alt="" class="w-100">
+                            <div class="card-body">
+                                <p class="card-text">甜美风格，衣服的几个主要元素，蝴蝶结，心形图案，浅粉色、浅紫色等少女感十足的颜色。</p>
+                                <div class="card-btn">
+                                    <button type="button" class="btn btn-sm">更多>></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="images/chao-1.png" alt="" class="w-100">
+                            <div class="card-body">
+                                <p class="card-text">休闲风格，选择衬衫搭配深色萝卜裤，很青春的样子，并且上身很舒服，有些许慵懒帅气的样子。</p>
+                                <div class="card-btn">
+                                    <button type="button" class="btn btn-sm">更多>></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <article class="main">
+        <div class="container">
+            <h2 class="wenzi1">潮流穿搭新闻专区</h2>
+            <p class="wenzi2">快来一起get吧！</p>
+            <div class="publish">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="./images/new-1.png" alt="">
+                    </div>
+                    <div class="col-sm-9">
+                        <h3>趣味简笔画--童装图案趋势</h3>
+                        <p class="text-top">dabai 发布于 2019-12-23</p>
+                        <p class="text-cen">简笔涂鸦中蕴含作者的想象力，笔触中携带着情感张力，简简单单的勾画就呈现出事物本来的特质，是童装图案中不可或缺的组成部分。本篇报告集合了众多充满趣味性的原创涂鸦小小图案供设计师参考使用</p>
+                        <p class="text-foot">阅读(102321)评论(400)赞 (800) <span style="display: block;">标签：健康 / 衣服 / 杂志 / 模特 / 服装 / 电商 / 趣味生活</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="./images/new-2.jpg" alt="">
+                    </div>
+                    <div class="col-sm-9">
+                        <h3>Vogue将举行全球时尚会议 邀请你来参加</h3>
+                        <p class="text-top">meixi20 发布于 2015-11-23</p>
+                        <p class="text-cen">为了讨论行业做出的努力和时尚未来的走向，Vogue将和Vogue Global Network、Vogue、Runway携手，在下周推出本杂志有史以来第一场全球会议——邀请每个人来参加。</p>
+                        <p class="text-foot">阅读(2417)评论(20)赞 (18) <span style="display: block;">标签：健康 / 衣服 / 杂志 / 模特 / 服装 / 电商 / 趣味生活</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="./images/new-3.jpg" alt="">
+                    </div>
+                    <div class="col-sm-9">
+                        <h3>瑞丽杂志将举行全球时尚会议，诚邀各方参加</h3>
+                        <p class="text-top">alibaixiu 发布于 2015-11-23</p>
+                        <p class="text-cen">为了讨论行业做出的努力和时尚未来的走向，Vogue将和Vogue Global Network、Vogue Runway携手，在下周推出本杂志有史以来第一场全球会议——邀请每个人来参加。</p>
+                        <p class="text-foot">阅读(2417)评论(20)赞 (18) <span style="display: block;">标签：健康 / 衣服 / 杂志 / 模特 / 服装 / 电商 / 趣味生活</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="wenzi3">合作伙伴</h3>
+                </div>
+                <div class="col-xs-6 col-xs-offset-4">
+                    <ul class="icon-pp">
+                        <li><img src="./images/pp-3.png" alt=""></li>
+                        <li><img src="./images/pp-4.png" alt=""></li>
+                        <li><img src="./images/pp-5.png" alt=""></li>
+                        <li><img src="./images/pp-8.png" alt=""></li>
+                        <li><img src="./images/pp-9.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12">
+                    <p class="wenzi4">企业培训 | 合作事宜 | 版权投诉</p>
+                    <p class="wenzi5">冀ICP 备12345678. © 2019-2025 chaoliuchuanda. Powered by chaopai.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script>
+        (function () {
+            var s = document.createElement("script");
+            s.onload = function () {
+                bootlint.showLintReportForCurrentDocument([]);
+            };
+            s.src = "js/bootlint.js";
+            document.body.appendChild(s)
+        })();
+    </script>
 </body>
 </html>

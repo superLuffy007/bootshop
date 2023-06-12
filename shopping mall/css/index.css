@@ -1,0 +1,80 @@
+.navbar{
+    background-color: #4A6F5E;
+}
+.banner{
+    margin-top: 60px;
+    height: 200px;
+}
+.content{
+    margin-top: 134px;
+}
+.wenzi1{
+    color: #4A6F5E;
+    text-align: center;
+    font-size: 34px;
+}
+.wenzi2{
+    color: #999;
+    text-align: center;
+    font-size: 24px;
+}
+.card{
+    width: 352px;
+    height: 500px;
+    background-color: #fff;
+    margin-top: 30px;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px #c1c1c1;
+}
+.card-body{
+    font-size: 16px;
+    margin: 20px;
+}
+.card-btn{
+    margin-left: 240px;
+}
+.foot{
+    height: 240px;
+    margin-top: 40px;
+    background-color: #343A40;
+}
+.icon-pp li{
+    list-style: none;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.wenzi3{
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+}
+.wenzi4{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.wenzi5{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.main{
+    margin-top: 40px;
+}
+.text-top{
+    color: #999;
+    font-size: 14px;
+}
+.text-cen{
+    color: #000;
+    font-size: 16px;
+}
+.text-foot{
+    color: #999;
+    font-size: 16px;
+}
