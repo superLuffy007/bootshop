@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- 头部 -->
+            <div class="navbar-header">
+                <!-- logo -->
+                <div class="navbar-brand"  style="margin-top: -10px; height: 80px;">
+                    <img src="./images/logo.jpg" alt="">
+                </div>
+                <!-- 触发按钮 -->
+                <!-- data-target="#asl" 绑定触发事件按钮与折叠菜单  data-toggle绑定JS控制效果 -->
+                <button type="button" class="navbar-toggle" data-target="#asl" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- 折叠菜单 -->
+            <div class="navbar-collapse collapse" id="asl">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html" style="font-size: 16px; color: #fff;">首页</a></li>
+                    <li><a href="seek.html" style="font-size: 16px; color: #fff;">搜索</a></li>
+                    <li><a href="product_list.html" style="font-size: 16px; color: #fff;">全部商品</a></li>
+                    <li><a href="cart.html" style="font-size: 16px; color: #fff;">购物车</a></li>
+                    <li><a href="login.html" style="font-size: 16px; color: #fff;">登录</a></li>
+                    <li><a href="register.html" style="font-size: 16px; color: #fff;">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="card-box container">
+        <div class="breadcrumb">
+            <a href="">首页</a> &gt; <a href="">全部商品</a>
+        </div>
+    </section>
+    <article class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <section class="product_tag" id="product_tag">
+                    <span>商品分类：</span>
+                    <a href="" class="active">不限</a>
+                    <a href="">女装</a>
+                    <a href="">男装</a>
+                    <a href="">鞋子</a>
+                    <a href="">冲锋衣</a>
+                </section>
+            </div>
+            <div class="col-xs-12">
+                <section class="product_list">
+                    <div class="product_list_head">
+                        <p>共找到 <strong id="nums">50</strong> 件匹配商品</p>
+                    </div>
+                    <ul class="product clearfloat" id="product">
+                        <li>
+                            <a href="product_detail.html" class="a_img"><img src="./images/list-1.png" alt="" /></a>
+                            <a href="" class="a_text">收腹高腰阔腿裤</a>
+                            <p>风季鸟旗舰店</p>
+                            <strong>¥ 72.90</strong>
+                        </li>
+                        <li>
+                            <a href="product_detail.html" class="a_img"><img src="./images/list-2.png" alt="" /></a>
+                            <a href="" class="a_text">日系工装裤</a>
+                            <p>NASA旗舰店</p>
+                            <strong>¥ 55.10</strong>
+                        </li>
+                        <li>
+                            <a href="product_detail.html" class="a_img"><img src="./images/list-3.png" alt="" /></a>
+                            <a href="" class="a_text">西装直筒裤</a>
+                            <p>风季鸟旗舰店</p>
+                            <strong>¥ 105.60</strong>
+                        </li>
+                        <li>
+                            <a href="product_detail.html" class="a_img"><img src="./images/list-4.png" alt="" /></a>
+                            <a href="" class="a_text">NASA联名黑衬衫</a>
+                            <p>NASA旗舰店</p>
+                            <strong>¥ 199.00</strong>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-xs-12">
+                <!-- 分页导航-->
+                <div class="pages" id="pages">
+                    <a href="" class="">上一页</a>
+                    <a href="" class="cur">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">下一页</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </article>
+    <footer class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="wenzi3">合作伙伴</h3>
+                </div>
+                <div class="col-sm-6 col-sm-offset-4">
+                    <ul class="icon-tp">
+                        <li><img src="./images/pp-3.png" alt=""></li>
+                        <li><img src="./images/pp-4.png" alt=""></li>
+                        <li><img src="./images/pp-5.png" alt=""></li>
+                        <li><img src="./images/pp-8.png" alt=""></li>
+                        <li><img src="./images/pp-9.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12">
+                    <p class="wenzi4">企业培训 | 合作事宜 | 版权投诉</p>
+                    <p class="wenzi5">冀ICP 备12345678. © 2019-2025 chaoliuchuanda. Powered by chaopai.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script>
+        (function () {
+            var s = document.createElement("script");
+            s.onload = function () {
+                bootlint.showLintReportForCurrentDocument([]);
+            };
+            s.src = "js/bootlint.js";
+            document.body.appendChild(s)
+        })();
+    </script>
+</body>
+</html>

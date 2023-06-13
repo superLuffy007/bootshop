@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- 头部 -->
+            <div class="navbar-header">
+                <!-- logo -->
+                <div class="navbar-brand"  style="margin-top: -10px; height: 80px;">
+                    <img src="./images/logo.jpg" alt="">
+                </div>
+                <!-- 触发按钮 -->
+                <!-- data-target="#asl" 绑定触发事件按钮与折叠菜单  data-toggle绑定JS控制效果 -->
+                <button type="button" class="navbar-toggle" data-target="#asl" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- 折叠菜单 -->
+            <div class="navbar-collapse collapse" id="asl">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html" style="font-size: 16px; color: #fff;">首页</a></li>
+                    <li><a href="seek.html" style="font-size: 16px; color: #fff;">搜索</a></li>
+                    <li><a href="product_list.html" style="font-size: 16px; color: #fff;">全部商品</a></li>
+                    <li><a href="cart.html" style="font-size: 16px; color: #fff;">购物车</a></li>
+                    <li><a href="login.html" style="font-size: 16px; color: #fff;">登录</a></li>
+                    <li><a href="register.html" style="font-size: 16px; color: #fff;">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="card-box container">
+        <div class="breadcrumb">
+            <a href="">首页</a> &gt; <a href="">我的购物车</a>
+        </div>
+    </section>
+    <div class="main container">
+        <div class="cart">
+            <div class="cart_con">
+                <div class="cartcon_title clearfloat">
+                    <span><input type="checkbox"/> 全选</span>
+                    <span>商品信息</span>
+                    <span>单价</span>
+                    <span>数量</span>
+                    <span>金额</span>
+                    <span>操作</span>
+                </div>
+                <div class="cartcon_list">
+                    <!-- <h2>请登录后查看您的购物车 <a href="login.html">去登录</a></h2>
+                    <h2>购物车中没有任何记录！<a href="product_list.html">查看所有商品</a></h2> -->
+                    <ul>
+                        <li class="clearfloat">
+                            <span><input type="checkbox" class="cart_checkbox"/></span>
+                            <a href="" class="cart_img"><img src="./images/share-1.png" alt=""/></a>
+                            <a href="" class="cart_title">春夏季宽松西装裤...</a>
+                            <i>¥128</i>
+                            <div>
+                                <span>-</span><input type="text" value="2"/><span>+</span>
+                            </div>
+                            <strong>¥256.00</strong>
+                            <em></em>
+                        </li>
+                        <li class="clearfloat">
+                            <span><input type="checkbox" class="cart_checkbox"/></span>
+                            <a href="" class="cart_img"><img src="./images/share-2.png" alt=""/></a>
+                            <a href="" class="cart_title">夏季短袖T恤套装两套装...</a>
+                            <i>¥199</i>
+                            <div>
+                                <span>-</span><input type="text" value="2"/><span>+</span>
+                            </div>
+                            <strong>¥398.00</strong>
+                            <em></em>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cart_header">
+                <p><input type="checkbox"/> 全选</p>
+                <span>商品总数<em>2</em>件</span>
+                <span>总金额：<strong>2499.00</strong></span>
+                <button type="button">结算</button>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="wenzi3">合作伙伴</h3>
+                </div>
+                <div class="col-sm-6 col-sm-offset-4">
+                    <ul class="icon-tp">
+                        <li><img src="./images/pp-3.png" alt=""></li>
+                        <li><img src="./images/pp-4.png" alt=""></li>
+                        <li><img src="./images/pp-5.png" alt=""></li>
+                        <li><img src="./images/pp-8.png" alt=""></li>
+                        <li><img src="./images/pp-9.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12">
+                    <p class="wenzi4">企业培训 | 合作事宜 | 版权投诉</p>
+                    <p class="wenzi5">冀ICP 备12345678. © 2019-2025 chaoliuchuanda. Powered by chaopai.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script>
+        (function () {
+            var s = document.createElement("script");
+            s.onload = function () {
+                bootlint.showLintReportForCurrentDocument([]);
+            };
+            s.src = "js/bootlint.js";
+            document.body.appendChild(s)
+        })();
+    </script>
+</body>
+</html>
