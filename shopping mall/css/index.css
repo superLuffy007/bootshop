@@ -404,7 +404,7 @@
     font-size: 18px;
 }
 .login button:hover {
-    background: #4A6F5E;
+    background: #c6efc2;
 }
 .login button:active {
     background: #4A6F5E;
@@ -534,7 +534,7 @@
     cursor: pointer;
 }
 .register button:hover {
-    background: #4A6F5E;
+    background: #c6efc2;
 }
 .li_btn>button.disabled{
     background: #ccc;
@@ -585,7 +585,7 @@
 }
 .product>li {
     float: left;
-    margin: 30px 74px 0 0;
+    margin: 30px 100px 0 0;
     list-style: none;
 }
 .product>li:nth-child(4n) {

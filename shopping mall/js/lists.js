@@ -17,7 +17,7 @@ function loadType() {
             var htmlstr = "";
             htmlstr += `<span>商品分类：</span><a href="0" class="active">不限</a>`;
             for (var i = 0; i < res.length; i++) {
-                // res[0].tname res[0].tid    {tid:"1",tname:"IT/互联网"}
+                // res[0].tname res[0].tid    {tid:"1",tname:"女装"}
                 htmlstr += `<a href="${res[i].tid}">${res[i].tname}</a>`;
             }
             // console.log(htmlstr);
@@ -25,7 +25,7 @@ function loadType() {
 
             // for循环为所有分类添加单击事件
             var as = product_tag.getElementsByTagName("a");  //所有分类数组集合
-            console.log(as);  //as[0] 不限  as[1] IT/互联网  as[2] 小说  as[3] 经典名著
+            console.log(as);  //as[0] 不限  as[1] 女装  as[2] 男装  as[3] 鞋子  as[4] 冲锋衣
             for (var i = 0; i < as.length; i++) {
                 as[i].onclick = function (e) {
                     e.preventDefault();  //去掉a标记的默认行为，不让它跳转页面
