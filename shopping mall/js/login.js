@@ -12,7 +12,7 @@ var icons = document.getElementsByClassName("icon_error");    //class=icon_error
 uname.onblur = function () {
     // 获取用户输入的账户
     var val = uname.value;
-    // console.log(val);
+    console.log(val);
     if (val == "") {    //输入为空
         tipss[0].style.display = "block";
         icons[0].style.display = "block";
@@ -24,7 +24,7 @@ uname.onblur = function () {
 upwd.onblur = function () {
     // 获取用户输入的账户
     var val = uname.value;
-    // console.log(val);
+    console.log(val);
     if (val == "") {    //输入为空
         tipss[1].style.display = "block";
         icons[1].style.display = "block";

@@ -64,7 +64,7 @@ function loadProduct(){
             var htmlstr = "";
             for (var j = 0; j < res.length; j++) {
                 htmlstr += `<li>
-                            <a href="./product_details.html?pid=${res[j].pid}" class="a_img"><img src="${res[j].pic}" alt="" /></a>
+                            <a href="./product_detail.html?pid=${res[j].pid}" class="a_img"><img src="${res[j].pic}" alt="" /></a>
                             <a href="" class="a_text">${res[j].title}</a>
                             <p>${res[j].pubhouse}</p>
                             <strong>¥ ${res[j].price}</strong>

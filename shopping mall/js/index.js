@@ -1,4 +1,4 @@
-loadProducts();  //加载首页8条商品
+loadProducts();  //加载首页6条商品
 function loadProducts() {
     var xhr = new XMLHttpRequest();
     xhr.open("get", "./php/ind_product.php", true);
@@ -12,7 +12,6 @@ function loadProducts() {
             // 将请求到的数据遍历到页面
             var htmlstr = "";
             for (var i = 0; i < res.length; i++) {
-                // res[0];  {"title":"JavaScript\u9ad8\u7ea7\u7a0b\u5e8f\u8bbe\u8ba112","price":"99.00","pic":"img-product\/04.jpg"}
                 // ``模板字符串 在js可以换行显示 &{} 解析变量
                 htmlstr += `<li>
                                 <a href="" class="a_img"><img src="${res[i].pic}" alt=""/></a>
